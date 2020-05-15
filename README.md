@@ -1,3 +1,7 @@
+
+NOTE: Per request I am presenting only the earliest version of this app, to display a very base presentation of the applications utility and functionality. 
+
+
 Why this Project:
 UPS Worldport: Safety Efficiency Platform is an auditing platform used by Ramp D, UPS Worldport Safety! The audits are conducted through Team monitoring. Counting incidents per event. As such multiple counters were implemented to directly mirror operational paperwork.
 
@@ -9,11 +13,16 @@ The application utilizes React, Redux, Redux-Persist, Firebase Auth and Firestor
 
 
 
-Per request I am presenting only the earliest version of this app, to display the demo of the apps functionality. 
 
 
 
-The full site generates emails with document information, creates new rows to spreadsheets, and tracks supervisors safety efficiency over time. Every data value is stored in redux and handled through action generators. The colleted data points show trends and recommend safety outreach and focuses for UPS CHSP and CERT teams.
+
+The full site:
+1]  generates emails of the audit document,
+2] creates new rows to spreadsheets,
+3] and tracks supervisors safety efficiency over time. 
+4] In addition this application also grants an admin console that allows for easier control of scheduling and easier schedule access to ramp supervisors. Ramp Crews can be dynamic, excel sheets were printed prior to start of shift. This application now handles that dynamic schedule. The TEAMS layout was designed with their usage and utility in mind
+  Every data value is stored in redux and handled through action generators. The colleted data points show trends and recommend safety outreach and focuses for UPS CHSP and CERT teams.
 
 
 The site can be reached @ https://upssafety-f8d4d.firebaseapp.com/
