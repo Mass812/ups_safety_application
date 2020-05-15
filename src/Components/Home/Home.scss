@@ -1,0 +1,124 @@
+$dark_theme_background: #4b4d4e;
+$dark_light_font: rgb(244, 246, 245);
+$dark_dark_font: #dbdfdf;
+$dark_teal_border: rgb(17, 184, 184);
+$dark_unsafe_number_color: rgb(197, 160, 39);
+$dark_safe_number_color: rgb(0, 209, 122);
+$cursiveNameColor: rgb(211, 165, 13);
+//light vakues
+
+$light_theme_background: '#F4F6F5';
+$light_light_font: rgb(252, 185, 0);
+$light_dark_font: #301504;
+$light_teal_border: goldenRod;
+$light_unsafe_number_color: rgb(107, 52, 52);
+$light_safe_number_color: rgb(22, 116, 77);
+
+$grey: #282c34;
+$font1: 'Bellota Text';
+$font2: 'Dr Sugiyama';
+$font3: 'Mr Dafoe';
+$font4: 'Telium Web';
+$font5: 'Cormorant Garamond', cursive;
+$font6: 'Dosis';
+$font7: 'Indie Flower';
+$font8: 'Josefin Slab';
+$font9: 'Cinzel';
+
+.home-parent-dark {
+	background-color: $dark_theme_background;
+	display: flex;
+	flex-direction: column;
+
+	font-family: $font5;
+	border-bottom: 1px inset rgb(235, 232, 232);
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	//min-height: 85vh;
+}
+
+.home-parent-light {
+	background-color: $light_theme_background;
+	display: flex;
+	flex-direction: column;
+
+	font-family: $font5;
+	border-bottom: 1px inset rgb(235, 232, 232);
+
+	width: 100%;
+	//min-height: 85vh;
+	justify-content: center;
+
+	align-items: center;
+}
+
+.home-table-block {
+	display: flex;
+	flex-direction: column;
+	font-family: $font8;
+	max-width: 900px;
+	align-content: flex-start;
+	text-align: left;
+	justify-content: left;
+	align-items: flex-start;
+	justify-self: left;
+}
+
+.font-awesome-choice-block-dark {
+	background-color: $dark_theme_background;
+	color: $dark_light_font;
+	padding: 5px;
+	font-size: 20px;
+	font-family: $font5;
+	min-height: 50px;
+	max-width: 900px;
+
+	// border-bottom: 1px inset rgb(235, 232, 232);
+
+	// &:first-child{
+	// 	border: 10px inset rgb(235, 232, 232);
+
+	// }
+}
+
+.font-awesome-choice-block-light {
+	background-color: '#F4F6F5';
+	color: black;
+	padding: 5px;
+	font-size: 24px;
+	font-family: $font5;
+	text-align: left;
+	min-height: 50px;
+	max-width: 900px;
+}
+
+.perform-which-light {
+	padding: 30px 0px 15px 0px;
+	font-weight: 700;
+	font-size: 26px;
+	color: $dark_theme_background;
+}
+
+.perform-which-dark {
+	padding: 30px 0px 15px 0px;
+	font-weight: 700;
+	font-size: 26px;
+	color: $dark_light_font;
+}
+
+.form-option-block {
+	display: flex;
+	font-size: 16px;
+	text-align: left;
+	justify-content: space-evenly;
+	justify-content: center;
+	align-self: center;
+}
+.individual-form-option {
+	text-align: left;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 30px;
+	padding-left: 20px;
+}

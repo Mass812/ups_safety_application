@@ -1,0 +1,126 @@
+$dark_theme_background: #4b4d4e;
+$dark_light_font: rgb(244, 246, 245);
+$dark_dark_font: #dbdfdf;
+$dark_teal_border: rgb(17, 184, 184);
+$dark_unsafe_number_color: rgb(197, 160, 39);
+$dark_safe_number_color: rgb(0, 209, 122);
+$cursiveNameColor: rgb(211, 165, 13);
+//light vakues
+
+$light_theme_background: '#F4F6F5';
+$light_light_font: rgb(252, 185, 0);
+$light_dark_font: #301504;
+$light_teal_border: goldenRod;
+$light_unsafe_number_color: rgb(107, 52, 52);
+$light_safe_number_color: rgb(22, 116, 77);
+
+$grey: #282c34;
+$font1: 'Bellota Text';
+$font2: 'Dr Sugiyama';
+$font3: 'Mr Dafoe';
+$font4: 'Telium Web';
+$font5: 'Cormorant Garamond', cursive;
+$font6: 'Dosis';
+$font7: 'Indie Flower';
+$font8: 'Josefin Slab';
+$font9: 'Cinzel';
+
+$color: #61dafb;
+$colorShade1: #4ea9c2;
+$colorShade2: #286f83;
+$background: #282c34;
+$inputBG: rgb(60, 157, 202, 0.6);
+$inputUnFocus: rgb(60, 157, 202);
+
+//puts border if toggle is true;
+
+.toggle-button-frame {
+	border: 2px solid rgb(216, 161, 9);
+	border-radius: 5px;
+	margin-left: 3px;
+	padding: 10px 0px;
+}
+.toggle-button-no-frame {
+	margin-left: 3px;
+	padding: 10px 0px;
+}
+
+.toggle-splay {
+	display: flex;
+	width: 150px;
+}
+
+.icon-select-splay-dark {
+	color: rgb(151, 150, 147);
+	background-color: yellow;
+	outline: none;
+	border-radius: 50%;
+	-webkit-transition-duration: 0.2s; /* Safari */
+	transition-duration: 0.7s;
+	&:active {
+		animation-name: toggleDark;
+		outline: none;
+		animation-duration: 1.2s;
+	}
+	&:after {
+		border: 3px solid green;
+	}
+}
+
+@keyframes toggleDark {
+	from {
+		color: '#F4F6F5';
+		border: 1px inset $light_light_font;
+
+		transform: translateY(4px);
+	}
+	to {
+		color: $light_dark_font;
+		border: 1px groove $light_dark_font;
+		transform: translateY(0px);
+	}
+}
+
+.icon-select-splay-light {
+	font-size: 18px;
+	margin: 1px;
+	border-radius: 50%;
+	color: rgb(189, 185, 181);
+	background-color: orange;
+	outline: none;
+	-webkit-transition-duration: .2s; /* Safari */
+	transition-duration: .1s;
+	&:active {
+		outline: none;
+		animation-name: toggleLight;
+		animation-duration: .2s;
+	}
+}
+@keyframes toggleLight {
+	from {
+		border: 2px inset $dark_theme_background;
+		color: rgb(236, 235, 235);
+		transform: translateY(2px);
+	}
+	to {
+		border: 2px groove $dark_theme_background;
+		color: $dark_theme_background;
+		transform: translateY(0px);
+	}
+}
+
+.icon-select-text-dark {
+	font-family: $font6;
+	padding-bottom: 3px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: rgb(252, 185, 0);
+}
+
+.icon-select-text-light {
+	font-family: $font6;
+	padding-bottom: 3px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: $light_dark_font;
+}

@@ -1,0 +1,428 @@
+$dark_theme_background: #4b4d4e;
+$dark_light_font: rgb(244, 246, 245);
+$dark_dark_font: #dbdfdf;
+$dark_teal_border: rgb(17, 184, 184);
+$dark_unsafe_number_color: rgb(197, 160, 39);
+$dark_safe_number_color: rgb(0, 209, 122);
+$cursiveNameColor: rgb(211, 165, 13);
+
+$light_theme_background: '#F4F6F5';
+$light_light_font: rgb(252, 185, 0);
+$light_dark_font: #301504;
+$light_teal_border: goldenRod;
+$light_unsafe_number_color: rgb(107, 52, 52);
+$light_safe_number_color: rgb(22, 116, 77);
+
+$grey: #282c34;
+$font1: 'Bellota Text';
+$font2: 'Dr Sugiyama';
+$font3: 'Mr Dafoe';
+$font4: 'Telium Web';
+$font5: 'Cormorant Garamond', cursive;
+$font6: 'Dosis';
+$font7: 'Indie Flower';
+$font8: 'Josefin Slab';
+$font9: 'Cinzel';
+
+.ranking-parent-dark {
+	height: 100%;
+	min-height: 85vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: $dark_theme_background;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+
+
+}
+
+.ranking-page-title-dark {
+	font-family: $font5;
+	font-size: 26px;
+	padding: 15px;
+	font-weight: 500;
+	color: $dark_light_font;
+}
+
+.sv-card-dark {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+	border: 2.3px inset $dark_theme_background;
+	box-shadow: 2px 2px grey;
+	border-radius: 10px;
+	margin-bottom: 25px;
+	background-color: rgb(39, 38, 38);
+	min-height: 150px;
+	box-shadow: 2px 2px 1px grey, -1px 1px 1px grey;
+	max-width: 900px;
+//	left: 50%;
+	/* bring your own prefixes */
+//	transform: translate(-50%, -0%);
+
+	//max-width: 900px;
+}
+
+.top-of-card-dark {
+	font-size: 18px;
+	font-weight: 700;
+	color: rgb(216, 216, 213);
+	padding: 4px;
+	border-bottom: 3px inset rgb(39, 38, 38);
+	background-color: rgb(49, 49, 49);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 0px;
+
+	font-family: $font5;
+	text-align: left;
+	width: 85%;
+	border-bottom-right-radius: 50px;
+	&::first-letter {
+		font-size: 30px;
+	}
+}
+
+.card-left-right-divider-dark {
+	display: flex;
+}
+
+.left-side-of-card-dark {
+	height: auto;
+	min-height: 120px;
+	width: 80%;
+	text-align: left;
+	padding: 5px;
+}
+
+.left-side-title-dark {
+	font-family: $font6;
+	text-decoration: underline;
+	padding: 5px;
+	color: rgb(160, 148, 137);
+	font-weight: 700;
+}
+
+.left-side-body-dark {
+	text-align: left;
+	padding: 3px;
+}
+
+.employee-name-dark {
+	text-align: left;
+	color: $dark_dark_font;
+	font-family: $font6;
+	line-height: 18px;
+	font-weight: 100;
+	font-size: 15px;
+	word-spacing: 2px;
+	padding-top: 5px;
+}
+
+.right-side-of-card-dark {
+	// height: 120px;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	color: rgb(230, 188, 50);
+}
+
+.right-side-stat-dark {
+	color: rgb(230, 188, 50);
+	font-size: 18px;
+	font-family: $font9;
+	font-weight: 500;
+	font-family: $font9;
+	color: $dark_light_font;
+}
+
+.ranking-parent-light {
+	background-color: #f4f6f5;
+	height: 100%;
+	min-height: 85vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	justify-content: center;
+	position: relative;
+
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -0%);
+
+	max-width: 900px;
+}
+
+.ranking-page-title-light {
+	font-family: $font5;
+	font-size: 26px;
+	padding: 15px;
+	font-weight: 700;
+	color: rgb(0, 0, 0);
+}
+
+.sv-card-light {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+	border-radius: 10px;
+	border: 1.8px groove $dark_theme_background;
+	max-width: 900px;
+	min-height: 150px;
+	font-size: 18px;
+
+	background-color: #f4f6f5;
+}
+
+.top-of-card-light {
+	font-size: 18px;
+	font-weight: 900;
+	color: black;
+	padding: 4px;
+	border-bottom: 3px inset rgb(39, 38, 38);
+	background-color: rgb(219, 215, 201);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 0px;
+
+	font-family: $font5;
+	text-align: left;
+	width: 85%;
+	border-bottom-right-radius: 50px;
+	&::first-letter {
+		font-size: 30px;
+	}
+}
+
+.filter-box-dark {
+	background-color: #313131;
+	max-width: 900px;
+}
+.filter-box-light {
+	background-color: rgb(252, 252, 249);
+	max-width: 900px;
+}
+
+.top-of-card-stat-dark {
+	justify-self: end;
+	text-align: left;
+	color: rgb(230, 188, 50);
+	padding: 4px 0px 0px 6px;
+	font-family: $font9;
+}
+.top-of-card-stat-light {
+	float: right;
+	text-align: left;
+	color: rgb(49, 41, 21);
+	padding: 4px 0px 0px 6px;
+	font-weight: 900;
+	font-family: $font5;
+	font-size: 22px;
+}
+
+.card-left-right-divider-light {
+	display: flex;
+}
+
+.left-side-of-card-light {
+	height: auto;
+	width: 80%;
+	text-align: left;
+	min-height: 120px;
+	padding: 5px;
+}
+
+.left-side-title-light {
+	font-family: $font6;
+	text-decoration: underline;
+	padding: 5px;
+	color: rgb(70, 63, 42);
+	font-weight: 700;
+}
+
+.left-side-body-light {
+	padding: 3px;
+	//	color: rgb(230, 188, 50);
+}
+
+.employee-name-light {
+	color: rgb(39, 38, 35);
+	text-align: left;
+	font-family: $font6;
+	line-height: 18px;
+	font-weight: 500;
+	font-size: 15px;
+	word-spacing: 2px;
+	padding-top: 5px;
+}
+
+.right-side-of-card-light {
+	// height: 120px;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	color: rgb(182, 156, 73);
+}
+
+.right-side-stat-light {
+	color: black;
+	font-size: 18px;
+	font-family: $font9;
+	font-weight: 700;
+	font-family: $font9;
+	color: black;
+}
+
+.top-of-card-info {
+	text-align: left;
+	font-size: 14px;
+}
+
+@keyframes tileAnimationLight {
+	to {
+		animation-name: tileAnimationLight;
+		outline: none;
+		background-color: rgb(190, 187, 173);
+		transform: translateY(1px);
+		font-size: 16px;
+	}
+}
+.filter-tile-light {
+	height: 70px;
+	margin: 2px;
+	width: 70px;
+	border-radius: 4px;
+	background-color: rgb(236, 235, 229);
+	font-family: $font9;
+	font-weight: 700;
+	-webkit-transition-duration: 0.2s; /* Safari */
+	transition-duration: 0.2s;
+	outline: none;
+	font-size: 14px;
+
+	&:focus {
+		animation-name: tileAnimationLight;
+		outline: none;
+		animation-duration: .3s;
+		border: 4px inset;
+		background-color: rgb(190, 187, 173);
+		font-size: 16px;
+	}
+	&:active {
+		animation-name: tileAnimationLight;
+		animation-duration: .3s;
+		outline: none;
+
+		background-color: rgb(190, 187, 173);
+		border: 4px inset;
+		font-size: 17px;
+	}
+}
+
+@keyframes tileAnimationDark {
+	to {
+		outline: none;
+		animation-duration: 1s;
+		background-color: rgb(107, 101, 101);
+		font-size: 16px;
+		transform: translateY(-1px);
+	}
+}
+
+.filter-tile-dark {
+	height: 70px;
+	margin: 2px;
+	width: 70px;
+	border-radius: 4px;
+	background-color: #2b2a2a;
+	border: 2px inset silver;
+	color: whiteSmoke;
+	font-family: $font9;
+	font-weight: 300;
+	-webkit-transition-duration: 0.2s; /* Safari */
+	transition-duration: 0.4s;
+	outline: none;
+	font-size: 14px;
+
+	&:active {
+		animation-name: tileAnimationDark;
+		outline: none;
+		animation-duration: 0.2s;
+		background-color: rgb(70, 67, 67);
+		border: 4px inset;
+		font-size: 16px;
+	}
+	&:focus {
+		animation-name: tileAnimationDark;
+		animation-duration: 0.2s;
+
+		background-color: rgb(70, 67, 67);
+		border: 4px inset;
+		font-size: 16px;
+	}
+}
+
+.all-w-d {
+	display: flex;
+	font-size: 12px;
+	padding: 15px;
+}
+
+.w-d-list-title-dark > div {
+	font-size: 12px;
+	color: rgb(211, 187, 106);
+	line-height: 15px;
+	padding: 5px;
+	&:nth-child(1) {
+		color: rgb(165, 154, 124);
+		font-size: 22px;
+		font-family: $font1;
+		font-weight: 500;
+	}
+}
+
+.individual-wd-names-dark {
+	color: rgb(160, 153, 153);
+}
+.w-d-list-title-light > div {
+	font-size: 12px;
+	color: rgb(0, 0, 0);
+	line-height: 15px;
+	padding: 5px;
+	&:nth-child(1) {
+		color: rgb(177, 138, 10);
+		font-size: 22px;
+		font-family: $font1;
+		font-weight: 500;
+	}
+}
+
+.individual-wd-names-light {
+	color: rgb(10, 10, 10);
+}
+
+.rank-toggle-wd-on-dark {
+	margin: 0px 4px;
+	font-size: 16px;
+	color: rgb(182, 179, 179);
+}
+.rank-toggle-wd-off-dark {
+	margin: 0px 4px;
+	font-size: 16px;
+	color: rgb(25, 199, 25);
+}
+
+.rank-toggle-wd-on-light {
+	margin: 0px 4px;
+	font-size: 16px;
+	color: rgb(5, 5, 5);
+}
+.rank-toggle-wd-off-light {
+	margin: 0px 4px;
+	font-size: 16px;
+	color: rgb(23, 252, 2);
+}

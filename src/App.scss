@@ -1,0 +1,300 @@
+$dark_theme_background: #4b4d4e;
+$dark_light_font: rgb(244, 246, 245);
+$dark_dark_font: #dbdfdf;
+$dark_teal_border: rgb(17, 184, 184);
+$dark_unsafe_number_color: rgb(197, 160, 39);
+$dark_safe_number_color: rgb(0, 209, 122);
+$cursiveNameColor: rgb(211, 165, 13);
+
+$light_theme_background: '#F4F6F5';
+$light_light_font: rgb(252, 185, 0);
+$light_dark_font: #301504;
+$light_teal_border: goldenRod;
+$light_unsafe_number_color: rgb(107, 52, 52);
+$light_safe_number_color: rgb(22, 116, 77);
+
+$grey: #282c34;
+$font1: 'Bellota Text';
+$font2: 'Dr Sugiyama';
+$font3: 'Mr Dafoe';
+$font4: 'Telium Web';
+$font5: 'Cormorant Garamond', cursive;
+$font6: 'Dosis';
+$font7: 'Indie Flower';
+$font8: 'Josefin Slab';
+$font9: 'Cinzel';
+
+$color: #61dafb;
+$colorShade1: #4ea9c2;
+$colorShade2: #286f83;
+$background: #282c34;
+$inputBG: rgb(60, 157, 202, 0.6);
+$inputUnFocus: rgb(60, 157, 202);
+
+* {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0px;
+
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+html {
+	height: 100vh;
+	width: 100%;
+}
+body {
+	height: 100vh;
+	width: 100%;
+	background-color: #f4f6f5;
+}
+
+input {
+	color: $inputUnFocus;
+	font-size: 14px;
+	margin: 5px;
+	letter-spacing: 1px;
+	padding: 5px;
+	padding-left: 25px;
+	margin: 15px;
+	border: none;
+	border-top: 2px solid $dark_theme_background;
+	border-bottom: 2px solid $dark_theme_background;
+	border-radius: 10px;
+	max-width: 300px;
+	min-width: 175px;
+	word-break: break-all;
+
+	&::placeholder {
+		color: rgb(190, 190, 190);
+		font-family: $font9;
+		font-size: 16px;
+	}
+
+	input[type=text]:focus {
+		background-color: $inputBG;
+		//	color: '#F4F6F5';
+		font-family: $font1;
+		font-weight: 100;
+	}
+	input[type=password]:focus {
+		background-color: $inputBG;
+		//	color: '#F4F6F5';
+		font-family: $font1;
+		font-weight: 100;
+	}
+	input[type=select]:focus {
+		background-color: $inputBG;
+		//	color: '#F4F6F5';
+		font-family: $font6;
+		font-weight: 100;
+	}
+}
+
+select {
+	color: goldenrod;
+	font-size: 14px;
+	margin: 5px;
+	letter-spacing: 1px;
+	outline: none;
+
+	margin: 15px;
+	border: none;
+	border-top: 2px solid $dark_theme_background;
+	border-bottom: 2px solid $dark_theme_background;
+	border-radius: 10px;
+	max-width: 300px;
+	min-width: 175px;
+	text-align: center;
+
+	&::placeholder {
+		color: goldenrod;
+		background-color: brown;
+	}
+	&::placeholder-shown {
+		color: goldenrod;
+		background-color: black;
+	}
+}
+
+.options {
+	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 4px;
+	outline: none;
+}
+
+label {
+	color: goldenrod;
+	font-family: $font1;
+}
+.home-parent-dark {
+	background-color: $dark_theme_background;
+	width: 100%;
+}
+
+.home-parent-light {
+	background-color: '#F4F6F5';
+	width: 100%;
+}
+
+.home-icons {
+	padding-right: 3px;
+	font-size: 20px;
+	padding-bottom: 2px;
+}
+
+.footer-block {
+	height: 5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: baseline;
+	text-align: end;
+}
+.footer-message {
+	font-family: $font2, cursive;
+	color: $light_light_font;
+}
+
+.form-title-dark {
+	color: '#F4F6F5';
+	font-size: 44px;
+	font-family: $font5;
+	font-weight: 100;
+	padding: 10px;
+	//background-color: $dark_theme_background;
+}
+
+.form-subtitle-dark {
+	overflow-x: hidden;
+	margin-left: 120px;
+	margin-top: -35px;
+	justify-self: right;
+	font-family: $font2;
+	font-size: 24px;
+	font-weight: 100;
+	background-color: $dark_theme_background;
+	width: 275px;
+	color: $cursiveNameColor;
+	background-color: $dark_theme_background;
+}
+.form-title-light {
+	color: $light_dark_font;
+	font-size: 44px;
+	font-family: $font5;
+	font-weight: 100;
+	padding: 10px;
+	background-color: $light_theme_background;
+}
+
+.sv-label-dark {
+	background-color: $dark_theme_background;
+	color: $dark_light_font;
+}
+.sv-label-light {
+	background-color: $light_theme_background;
+	color: $light_dark_font;
+}
+
+.employee-count-label-dark {
+	background-color: $dark_theme_background;
+	color: $dark_light_font;
+}
+.employee-count-label-light {
+	background-color: $light_theme_background;
+	color: $light_dark_font;
+}
+
+.form-subtitle-light {
+	position: absolute;
+	overflow-x: hidden;
+	margin-left: 120px;
+	margin-top: -20px;
+	justify-self: right;
+	font-family: $font2;
+	font-size: 24px;
+	font-weight: 100;
+	background-color: $light_theme_background;
+	width: 275px;
+	color: $cursiveNameColor;
+}
+
+.form-emblem-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	padding: 0px 10px;
+	font-family: $font2;
+}
+-landing {
+	margin-top: -6px;
+	font-weight: 100;
+	font-size: 16px;
+	color: $light_light_font;
+	background-color: transparent;
+}
+.emblem-font-light {
+	margin-top: -10px;
+	font-weight: 100;
+	font-size: 20px;
+	color: #6b4d11;
+	background-color: transparent;
+	font-size: 20px;
+}
+.emblem-font-dark {
+	margin-top: -10px;
+	font-weight: 100;
+	font-size: 22px;
+	color: #b3aca1;
+	background-color: transparent;
+	font-size: 20px;
+}
+.emblem-landing-font-dark {
+	margin-top: -6px;
+	font-weight: 100;
+	font-size: 46px;
+	color: $light_light_font;
+	background-color: transparent;
+}
+.emblem-landing-font-light {
+	margin-top: -6px;
+	font-weight: 100;
+	font-size: 46px;
+	color: $light_dark_font;
+	background-color: transparent;
+}
+
+.input-return-dark {
+	padding: 20px 50px;
+	color: $light_light_font;
+	word-break: break-all;
+}
+.input-return-light {
+	padding: 20px 50px;
+	color: $light_light_font;
+	word-break: break-all;
+}
+
+.comment-question-light {
+	font-size: 16px;
+	font-family: $font6;
+	color: $light_dark_font;
+	font-weight: 500;
+	padding: 20px 0px 45px 0px;
+}
+.comment-question-dark {
+	font-size: 16px;
+	font-family: $font6;
+	color: $dark_dark_font;
+	padding: 15px 0px 45px 0px;
+}
+
+@media all and (max-width: 1010px) {
+}

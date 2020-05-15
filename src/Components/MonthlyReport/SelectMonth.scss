@@ -1,0 +1,57 @@
+
+$dark_theme_background: #4b4d4e;
+$dark_light_font: rgb(244, 246, 245);
+$dark_dark_font: #dbdfdf;
+$dark_teal_border: rgb(17, 184, 184);
+$dark_unsafe_number_color: rgb(197, 160, 39);
+$dark_safe_number_color: rgb(0, 209, 122);
+$cursiveNameColor: rgb(211, 165, 13);
+
+$light_theme_background: '#F4F6F5';
+$light_light_font: rgb(252, 185, 0);
+$light_dark_font: #301504;
+$light_teal_border: goldenRod;
+$light_unsafe_number_color: rgb(107, 52, 52);
+$light_safe_number_color: rgb(22, 116, 77);
+
+$grey: #282c34;
+$font1: 'Bellota Text';
+$font2: 'Dr Sugiyama';
+$font3: 'Mr Dafoe';
+$font4: 'Telium Web';
+$font5: 'Cormorant Garamond', cursive;
+$font6: 'Dosis';
+$font7: 'Indie Flower';
+$font8: 'Josefin Slab';
+$font9: 'Cinzel';
+
+.select-month-parent-dark{
+    background-color: $dark_theme_background;
+}
+
+.select-subtitle-dark{
+    padding-top: 50px;
+    font-family: $font5;
+	font-size: 24px;
+	font-weight: 100;
+	background-color: $dark_theme_background;
+    padding: 20px;
+	color: $cursiveNameColor;
+	background-color: $dark_theme_background;
+}
+
+.select-month-parent-light{
+    background-color: '#F4F6F5';
+}
+
+.select-subtitle-light{
+    padding-top: 50px;
+
+    font-family: $font5;
+    font-size: 24px;
+    padding: 20px;
+	font-weight: 100;
+	background-color: $light_theme_background;
+	color: $cursiveNameColor;
+}
+

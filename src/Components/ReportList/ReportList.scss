@@ -1,0 +1,323 @@
+$dark_theme_background: #4b4d4e;
+$dark_light_font: rgb(244, 246, 245);
+$dark_dark_font: #dbdfdf;
+$dark_teal_border: rgb(17, 184, 184);
+$dark_unsafe_number_color: rgb(197, 160, 39);
+$dark_safe_number_color: rgb(0, 209, 122);
+$cursiveNameColor: rgb(211, 165, 13);
+//light vakues
+
+$light_theme_background: '#F4F6F5';
+$light_light_font: rgb(252, 185, 0);
+$light_dark_font: #301504;
+$light_teal_border: goldenRod;
+$light_unsafe_number_color: rgb(107, 52, 52);
+$light_safe_number_color: rgb(22, 116, 77);
+
+$grey: #282c34;
+$font1: 'Bellota Text';
+$font2: 'Dr Sugiyama';
+$font3: 'Mr Dafoe';
+$font4: 'Telium Web';
+$font5: 'Cormorant Garamond', cursive;
+$font6: 'Dosis';
+$font7: 'Indie Flower';
+$font8: 'Josefin Slab';
+$font9: 'Cinzel';
+
+*{box-sizing: border-box; max-width:  100vw}
+
+.report-link-container-dark {
+	background-color: $dark_theme_background;
+	font-size: 14px;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+
+}
+
+report-parent-dark {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	font: $font6;
+	background-color: $dark_theme_background;
+}
+
+.report-card-parent{
+	max-width: 900px;
+	font-size: 14px;
+	
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.scoreboard-safe-dark {
+	padding: 10px;
+}
+
+.scoreboard-unsafe-dark {
+	padding: 10px;
+}
+
+.scoreboard-dark {
+	display: flex;
+	background-color: $dark_theme_background;
+	flex: 4;
+}
+
+.scoreboard-titles-dark {
+	color: $dark_dark_font;
+	padding: 10px;
+}
+
+.left-side-scoreboard-titles-dark {
+	background-color: $dark_theme_background;
+	display: flex;
+
+	padding: 10px;
+}
+
+.report-banner-dark {
+	display: flex;
+
+	flex-direction: row;
+	height: auto;
+	border: 1px solid $dark_light_font;
+	border-radius: 7px;
+	max-width: 900px;
+	background-color: $dark_theme_background;
+	margin: 15px 0px;
+	box-shadow: 2px 2px 2px rgb(71, 70, 70);
+	color: $dark_light_font;
+	color: '#F4F6F5';
+}
+
+.report-banner-subject-dark {
+	display: flex;
+	font-family: $font5;
+	font-size: 20px;
+	padding-bottom: 3px;
+	flex-direction: row;
+	height: auto;
+	border: 1px solid $dark_light_font;
+	border-radius: 7px;
+	max-width: 900px;
+	background-color: $dark_theme_background;
+	margin: 15px 0px;
+	box-shadow: 2px 2px 2px rgb(71, 70, 70);
+	color: $dark_light_font;
+	color: '#F4F6F5';
+}
+
+.report-hard-data {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	min-height: 130px;
+}
+
+.hard-data-point-dark {
+	text-align: left;
+	padding: 3px;
+	color: $dark_light_font;
+}
+
+.safe-unsafe-ratio-text-dark {
+	font-size: 12px;
+	color: $dark_light_font;
+}
+.safe-unsafe-ratio-percent-dark {
+	font-size: 18px;
+	color: goldenrod;
+}
+
+.safe-unsafe-ratio-dark {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	min-width: 20vw;
+}
+
+.left-side-scoreboard-titles-dark {
+	background-color: $dark_theme_background;
+	display: flex;
+
+	padding: 10px;
+}
+
+.safe-unsafe-ratio-link-dark {
+	padding-top: 3px;
+	position: sticky;
+	color: rgb(143, 140, 125);
+	position: absolute;
+	object-fit: contain;
+	margin-top: 50px;
+	left: 15px;
+	font-family: $font1;
+	overflow: hidden;
+	width: 50%;
+}
+
+//LIGHT MODE
+
+.safe-unsafe-ratio-link-light {
+	padding-top: 30px;
+	color: rgb(143, 140, 125);
+	object-fit: contain;
+	left: 15px;
+	font-family: $font1;
+	
+}
+.report-link-container-light {
+	background-color: $dark_light_font;
+	font-size: 14px;
+	//height: 100%;
+	//width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+
+}
+
+report-parent-light {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	font: $font6;
+	background-color: $light_theme_background;
+}
+
+.scoreboard-safe-light {
+	padding: 10px 0px;
+}
+
+.scoreboard-unsafe-light {
+	padding: 10px;
+}
+
+.scoreboard-light {
+	display: flex;
+	background-color: $light_theme_background;
+	flex: 4;
+}
+
+.scoreboard-titles-light {
+	color: $dark_dark_font;
+	padding: 10px;
+}
+
+.left-side-scoreboard-titles-light {
+	background-color: $light_theme_background;
+	display: flex;
+	max-width: 900px;
+	padding: 10px;
+	box-shadow: 2px 2px 6px grey, -2px -2px 4px grey;
+}
+
+.report-banner-light {
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	border: 1px solid $dark_dark_font;
+	border-radius: 7px;
+	max-width: 900px;
+	background-color: $light_theme_background;
+	margin: 15px 0px;
+	box-shadow: 2px 2px 2px rgb(71, 70, 70);
+	color: $dark_light_font;
+	color: $light_dark_font;
+}
+
+.report-banner-subject-light {
+	display: flex;
+	font-family: $font5;
+	font-size: 20px;
+	padding-bottom: 3px;
+	flex-direction: row;
+	height: auto;
+	border: 1px solid $dark_dark_font;
+	border-radius: 7px;
+	max-width: 900px;
+	background-color: $light_theme_background;
+	margin: 15px 0px;
+	box-shadow: 2px 2px 2px rgb(71, 70, 70);
+	color: $dark_light_font;
+	color: $light_dark_font;
+}
+
+.report-hard-data {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.hard-data-point-light {
+	text-align: left;
+	padding: 3px;
+	color: $light_dark_font;
+}
+
+.safe-unsafe-ratio-text-light {
+	font-size: 12px;
+	color: $light_dark_font;
+}
+.safe-unsafe-ratio-percent-light {
+	font-size: 18px;
+	color: goldenrod;
+}
+
+.safe-unsafe-ratio-light {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	min-width: 20vw;
+	color: goldenrod;
+}
+
+.left-side-scoreboard-titles-dark {
+	background-color: $dark_theme_background;
+	display: flex;
+	max-width: 900px;
+	padding: 10px;
+	box-shadow: 2px 2px 6px grey, -2px -2px 4px grey;
+
+}
+
+.hard-data-point-dark-top {
+	font-family: $font5;
+	font-size: 20px;
+	color: $dark_light_font;
+	border-bottom: 2px solid grey;
+	text-align: left;
+	color: goldenrod;
+}
+.hard-data-point-light-top {
+	font-family: $font5;
+	font-size: 20px;
+	color: $light_dark_font;
+	border-bottom: 2px solid grey;
+	text-align: left;
+	color: rgb(53, 43, 18);
+	font-weight: 600;
+}

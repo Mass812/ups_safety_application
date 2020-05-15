@@ -1,0 +1,166 @@
+$grey: #282c34;
+$font1: 'Bellota Text';
+$font2: 'Dr Sugiyama';
+$font3: 'Mr Dafoe';
+$font4: 'Telium Web';
+$font5: 'Cormorant Garamond', cursive;
+$font6: 'Dosis';
+$font7: 'Indie Flower';
+$font8: 'Josefin Slab';
+$font9: 'Cinzel';
+$light_dark_font: rgb(51, 44, 44);
+
+//styling
+$borderWidth: 7px;
+$animationTime: 1.5s;
+$border-color-default: #eee;
+$border-color-fill: #ffb43e;
+$size: 150px;
+
+.pdf {
+	width: 100%;
+	height: 100%;
+	background-color: '#F4F6F5';
+	margin: 0 auto;
+}
+
+.pdf-section {
+	padding: 0px;
+	margin-bottom: -15px;
+}
+
+.pdf-wrapper {
+
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+}
+.pdf-parent{
+height: 100%;
+
+}
+.pdf-image-title-block {
+	display: flex;
+	font-family: $font6;
+	font-size: 14px;
+}
+
+.pdf-efficiency-block {
+	padding: 1%;
+	font-size: 8px;
+}
+
+.pdf-review-message {
+	font-family: $font5;
+	padding-top: 5px;
+	color: rgb(167, 101, 15);
+}
+
+.pdf-form-title-report {
+	display: flex;
+	padding-top: 1px;
+}
+
+.pdf-form-info {
+	display: inline-flex;
+	font-size: 11px;
+	padding-left: 5px;
+	font-family: $font6;
+	padding-top: 5px;
+	width: 100%;
+	text-align: left;
+}
+
+.pdf-form-info-question {
+	width: 27%;
+	text-align: left;
+	font-size: 8px;
+}
+
+.pdf-form-info-response {
+	width: 65%;
+	text-align: left;
+	border-bottom: 1px solid black;
+	font-family: $font4;
+	font-size: 8px;
+	font-weight: 500;
+}
+
+.pdf-table-block {
+	justify-content: left;
+	width: 100%;
+	padding: 1%;
+}
+
+.pdf-row {
+	font-size: 11px;
+	display: flex;
+	align-content: left;
+	justify-content: left;
+	align-items: center;
+
+	border: 1px solid black;
+}
+
+.pdf-table--left {
+	display: flex;
+	flex-direction: column;
+	width: 58%;
+	padding: 1%;
+	text-align: left;
+}
+.pdf-table-right {
+	display: flex;
+	padding: 1%;
+	width: 38%;
+	align-items: center;
+}
+.pdf-right-cell {
+	font-weight: 500;
+}
+
+.pdf-comment-info-question {
+	padding: .5%;
+	font-size: 9px;
+}
+
+.pdf-additional-comments {
+	padding: .5%;
+	color: black;
+	font-size: 10px;
+	font-weight: 500;
+}
+
+.pdf-button-splay {
+	transform: scale(1);
+	position: absolute;
+	bottom: 30px;
+	font-size: 14px;
+	width: 300px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+ @media  screens and (min-width: 950px){
+	.pdf-form-info {
+		font-size: 26px;
+	}    
+
+	.pdf-form-info-response {
+		font-size: 26px;
+}
+.pdf-row {
+	font-size: 26px;
+}
+
+.pdf-additional-comments {
+	padding: .5%;
+	color: black;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+ }

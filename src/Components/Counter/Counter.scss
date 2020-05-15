@@ -1,0 +1,291 @@
+//dark values
+
+$dark_theme_background: #4b4d4e;
+$dark_light_font: rgb(244, 246, 245);
+$dark_dark_font: #dbdfdf;
+$dark_teal_border: rgb(17, 184, 184);
+$dark_unsafe_number_color: rgb(197, 160, 39);
+$dark_safe_number_color: rgb(0, 209, 122);
+
+//light vakues
+
+$light_theme_background: #F4F6F5;
+$light_light_font: rgb(252, 185, 0);
+$light_dark_font: #301504;
+$light_teal_border: goldenRod;
+$light_unsafe_number_color: rgb(252, 185, 0);
+$light_safe_number_color: #301504;
+
+$grey: #282c34;
+$font1: 'Bellota Text';
+$font2: 'Dr Sugiyama';
+$font3: 'Mr Dafoe';
+$font4: 'Telium Web';
+$font5: 'Cormorant Garamond', cursive;
+$font6: 'Dosis';
+$font7: 'Indie Flower';
+$font8: 'Josefin Slab';
+$font9: 'Cinzel';
+
+$color: #61dafb;
+$colorShade1: #4ea9c2;
+$colorShade2: #286f83;
+$background: #282c34;
+$inputBG: rgb(60, 157, 202, 0.6);
+$inputUnFocus: rgb(60, 157, 202);
+
+//darkmode
+
+.counter-parent-dark {
+	padding: 10px;
+	border-bottom: 4px groove $dark_theme_background;
+	border-radius: 0px;
+	background-color: $dark_theme_background;
+}
+
+//width 100 original
+
+.counter-block-dark {
+	//o-100px
+	width: 110px;
+	display: inline-flex;
+	flex-direction: column;
+	//border: 4px groove $dark_theme_background;
+	border: 2px inset $dark_theme_background;
+	box-shadow: 2px 2px grey;
+	border-radius: 10px;
+	margin: 10px;
+	margin-bottom: 25px;
+	background-color: $dark_theme_background;
+	font-family: $font9;
+	&:active {
+		border-color: rgb(87, 186, 216);
+		border: 2px solid $dark_theme_background;
+	}
+}
+
+.counter-emphasis-title-dark {
+	color: $dark_light_font;
+	font-family: $font6;
+	font-size: 32px;
+	padding: 15px 30px 0px 30px;
+	background-color: $dark_theme_background;
+}
+
+.counter-long-title-dark {
+	display: flex;
+	align-self: center;
+	justify-self: center;
+	color: $dark_dark_font;
+	font-family: $font6;
+	font-size: 16px;
+	padding: 5px;
+	padding: 5px 30px 40px 30px;
+	background-color: $dark_theme_background;
+}
+.safe-title-dark {
+	color: $dark_light_font;
+	border-radius: 10px;
+	padding-top: 5px;
+	background-color: $dark_theme_background;
+}
+.num-value-safe-dark {
+	color: $dark_safe_number_color;
+	font-size: 35px;
+	height: 60px;
+	border-radius: 10px;
+	font-family: $font9;
+	font-weight: 700;
+	padding-top: 7px;
+	background-color: $dark_theme_background;
+}
+.num-value-unsafe-dark {
+	color: $light_unsafe_number_color;
+	background-color: $dark_theme_background;
+	font-size: 35px;
+	height: 60px;
+	border-radius: 10px;
+	font-family: $font9;
+	font-weight: 700;
+	padding-top: 7px;
+	color: $dark_unsafe_number_color;
+}
+.increment-block-dark {
+	display: flex;
+	height: 90px;
+	border-radius: 10px;
+}
+.increase-dark {
+	border-top: 1px inset $dark_light_font;
+	padding-top: 12px;
+	color: $dark_light_font;
+	font-weight: 500;
+	font-size: 40px;
+	border-bottom-right-radius: 30px;
+	margin: 0 2px 2px 0;
+
+	&:active {
+		color: greenyellow;
+	}
+}
+
+.decrease-dark {
+	border-bottom-left-radius: 30px;
+	font-weight: 500;
+	border-top: 1px inset $dark_light_font;
+	padding-top: 12px;
+	color: $dark_light_font;
+	font-size: 40px;
+	&:active {
+		color: red;
+	}
+}
+
+.feedback-dark {
+	display: flex;
+	flex-direction: column;
+	padding: 40px 0px;
+	color: $dark_dark_font;
+}
+.feedback-info-dark {
+	padding: 5px 10px;
+	font-size: 14px;
+}
+
+.type-feedback-given-dark {
+	color: $light_light_font;
+	padding-bottom: 30px;
+	font-family: $font1;
+}
+
+// lightmode
+
+.counter-parent-light {
+	padding: 10px;
+	border-bottom: 4px groove $light_theme_background;
+	border-radius: 0px;
+	background-color: $light_theme_background;
+}
+
+.counter-block-light {
+	width: 110px;
+	display: inline-flex;
+	flex-direction: column;
+	//border: 4px groove $light_theme_background;
+	//border: 2px inset $light_dark_font;
+	box-shadow: 2px 2px 4px rgb(230, 227, 227), -2px -2px 6px rgb(58, 58, 58);
+
+	border-radius: 10px;
+	margin: 10px;
+	margin-bottom: 25px;
+	background-color: $light_theme_background;
+	font-family: $font9;
+	&:active {
+		border-color: rgb(87, 186, 216);
+		border: 2px inset $dark_light_font;
+	}
+}
+
+.counter-emphasis-title-light {
+	color: rgb(87, 80, 20);
+	font-family: $font6;
+	font-size: 34px;
+	padding: 15px 30px 0px 30px;
+	background-color: $light_theme_background;
+}
+
+.counter-long-title-light {
+	display: flex;
+	align-self: center;
+	justify-self: center;
+	color: black;
+	font-family: $font6;
+	font-size: 16px;
+	padding: 5px;
+	padding: 5px 30px 40px 30px;
+	background-color: $light_theme_background;
+}
+.safe-title-light {
+	color: black;
+	font-weight: 700;
+	border-radius: 10px;
+	padding-top: 5px;
+	background-color: $light_theme_background;
+}
+.num-value-safe-light {
+	color: $light_safe_number_color;
+	font-size: 35px;
+	height: 60px;
+	border-radius: 10px;
+	font-family: $font9;
+	font-weight: 700;
+	padding-top: 7px;
+	background-color: $light_theme_background;
+}
+.num-value-unsafe-light {
+	color: $light_theme_background;
+	font-size: 35px;
+	height: 60px;
+	border-radius: 10px;
+	font-family: $font9;
+	font-weight: 700;
+	padding-top: 7px;
+	color: $light_unsafe_number_color;
+	background-color: $light_theme_background;
+}
+.increment-block-light {
+	display: flex;
+	height: 90px;
+	border-radius: 10px;
+	background-color: $light_theme_background;
+}
+.increase-light {
+	border-top: 2px inset $light_dark_font;
+	padding-top: 12px;
+	color: $light_dark_font;
+	font-size: 40px;
+	border-bottom-right-radius: 30px;
+	margin: 0 2px 2px 0;
+	background-color: $light_theme_background;
+	font-weight: 700;
+	&:active {
+		color: rgb(116, 187, 9);
+	}
+}
+
+.decrease-light {
+	border-top: 2px inset $light_dark_font;
+	border-bottom-left-radius: 30px;
+	background-color: $light_theme_background;
+
+	padding-top: 12px;
+	color: $light_dark_font;
+	font-size: 40px;
+	font-weight: 700;
+	&:active {
+		color: $light_unsafe_number_color;
+	}
+}
+
+.feedback-light {
+	display: flex;
+	flex-direction: column;
+	padding: 40px 0px;
+	background-color: $light_theme_background;
+
+	color: $dark_dark_font;
+}
+.feedback-info-light {
+	padding: 5px 10px;
+	font-size: 14px;
+	background-color: $light_theme_background;
+	color: grey;
+}
+
+.type-feedback-given-light {
+	color: $light_dark_font;
+
+	padding-bottom: 30px;
+	font-family: $font1;
+	background-color: $light_theme_background;
+}

@@ -1,0 +1,133 @@
+$dark_theme_background: #4b4d4e;
+$dark_light_font: rgb(244, 246, 245);
+$dark_dark_font: #dbdfdf;
+$dark_teal_border: rgb(17, 184, 184);
+$dark_unsafe_number_color: rgb(197, 160, 39);
+$dark_safe_number_color: rgb(0, 209, 122);
+
+//light vakues
+
+$light_theme_background: '#F4F6F5';
+$light_light_font: rgb(252, 185, 0);
+$light_dark_font: #301504;
+$light_teal_border: goldenRod;
+$light_unsafe_number_color: rgb(107, 52, 52);
+$light_safe_number_color: rgb(22, 116, 77);
+
+$grey: #282c34;
+$font1: 'Bellota Text';
+$font2: 'Dr Sugiyama';
+$font3: 'Mr Dafoe';
+$font4: 'Telium Web';
+$font5: 'Cormorant Garamond', cursive;
+$font6: 'Dosis';
+$font7: 'Indie Flower';
+$font8: 'Josefin Slab';
+$font9: 'Cinzel';
+
+$color: #61dafb;
+$colorShade1: #4ea9c2;
+$colorShade2: #286f83;
+$background: #282c34;
+$inputBG: rgb(60, 157, 202, 0.6);
+$inputUnFocus: rgb(60, 157, 202);
+
+@keyframes buttonAnimationLight {
+	from {
+		color: '#F4F6F5';
+		border: 1px inset $light_light_font;
+		background-color: $light_dark_font;
+		transform: translateY(4px);
+	}
+	to {
+		background-color: $light_light_font;
+		color: $light_dark_font;
+		border: 1px groove $light_dark_font;
+		transform: translateY(0px);
+	}
+}
+@keyframes buttonAnimationDark {
+	from {
+		color: $light_light_font;
+		border: 1px inset $dark_theme_background;
+		background-color: $dark_theme_background;
+		transform: translateY(4px);
+	}
+	to {
+		background-color: $background;
+		color: rgb(236, 235, 235);
+		border: 1px groove $dark_theme_background;
+		transform: translateY(0px);
+	}
+}
+.button-dark {
+	//margin-right: 15px;
+	background-color: $background;
+	color: rgb(236, 235, 235);
+	border: 1px groove $dark_theme_background;
+	border-radius: 50px;
+	width: auto;
+	padding: 4px 12px;
+	align-self: center;
+	font-family: $font5;
+	font-weight: 300;
+	-webkit-transition-duration: 0.2s; /* Safari */
+	transition-duration: 0.4s;
+	outline: none;
+	font-size: 14px;
+
+	// &:hover {
+	// 	color: '#F4F6F5';
+	// 	border: 1px inset turquoise;
+	// 	background-color: $light_light_font;
+	// }
+
+	&:active {
+		animation-name: buttonAnimationDark;
+		outline: none;
+		animation-duration: 1s;
+	}
+}
+
+.button-light {
+//	margin-right: 15px;
+	background-color: $light_light_font;
+	color: $light_dark_font;
+	border: 1px groove $light_dark_font;
+	border-radius: 50px;
+	width: auto;
+	padding: 4px 12px;
+	align-self: center;
+	font-family: $font5;
+	font-weight: 900;
+	-webkit-transition-duration: 0.2s; /* Safari */
+	transition-duration: 0.4s;
+	font-size: 14px;
+	//letter-spacing: 1.1px;
+	// &:hover {
+	// 	color: '#F4F6F5';
+	// 	border: 1px inset $light_light_font;
+	// 	background-color: $light_dark_font;
+	// }
+	outline: none;
+	&:active {
+		outline: none;
+		animation-name: buttonAnimationLight;
+		animation-duration: .7s;
+	}
+}
+
+/* 11 Pro 2436x1125px at 458ppi */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+}
+
+//11 pro max
+/* 2688x1242px at 458ppi */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+	.button-light {
+		font-size: 14px;
+	}
+	.button-dark {
+		font-size: 14px;
+	}
+}

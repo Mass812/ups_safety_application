@@ -1,0 +1,112 @@
+$dark_theme_background: #4b4d4e;
+$dark_light_font: rgb(244, 246, 245);
+$dark_dark_font: #dbdfdf;
+$dark_teal_border: rgb(17, 184, 184);
+$dark_unsafe_number_color: rgb(197, 160, 39);
+$dark_safe_number_color: rgb(0, 209, 122);
+$cursiveNameColor: rgb(211, 165, 13);
+//light vakues
+
+$light_theme_background: '#F4F6F5';
+$light_light_font: rgb(252, 185, 0);
+$light_dark_font: #301504;
+$light_teal_border: goldenRod;
+$light_unsafe_number_color: rgb(107, 52, 52);
+$light_safe_number_color: rgb(22, 116, 77);
+
+$grey: #282c34;
+$font1: 'Bellota Text';
+$font2: 'Dr Sugiyama';
+$font3: 'Mr Dafoe';
+$font4: 'Telium Web';
+$font5: 'Cormorant Garamond', cursive;
+$font6: 'Dosis';
+$font7: 'Indie Flower';
+$font8: 'Josefin Slab';
+$font9: 'Cinzel';
+
+$color: #61dafb;
+$colorShade1: #4ea9c2;
+$colorShade2: #286f83;
+$background: #282c34;
+$inputBG: rgb(60, 157, 202, 0.6);
+$inputUnFocus: rgb(60, 157, 202);
+
+.quick-form-parent-dark {
+	height: 100%;
+	background-color: $dark_theme_background;
+}
+.quick-form-parent-light {
+	height: 100%;
+	background-color: $light_theme_background;
+}
+.quick-title-dark {
+	font-size: 26px;
+	padding: 20px 5px 50px 5px;
+	color: $dark_dark_font;
+}
+.quick-title-light {
+	font-size: 26px;
+	padding: 20px 5px 50px 5px;
+}
+
+.question-and-toggle-block-dark {
+	display: flex;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1.1px;
+	padding: 20px 5px;
+	flex: 5;
+	letter-spacing: 1px;
+	align-items: center;
+	&:nth-child(even) {
+		border: 1px groove black;
+		margin-top: 5px;
+		box-shadow: 1px 1px 5px rgb(161, 158, 154);
+	}
+}
+.question-and-toggle-block-light {
+	display: flex;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1.1px;
+	padding: 20px 5px;
+	flex: 7;
+	align-items: center;
+	&:nth-child(even) {
+		border: 1px groove $dark_dark_font;
+		margin-top: 5px;
+		box-shadow: 1px 1px 5px rgb(172, 170, 166);
+	}
+}
+
+.q-number {
+	width: 25px;
+	color: inherit;
+}
+.q-number {
+	width: 25px;
+}
+
+.true-false-question-dark {
+	flex: 4;
+	color: $dark_dark_font;
+	font-family: $font6;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.true-false-question-light {
+	color: rgb(71, 68, 57);
+	flex: 4;
+	font-family: $font6;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.true-false-toggle-dark {
+	flex: 3;
+}
+.true-false-toggle-light {
+	flex: 3;
+}

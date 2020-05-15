@@ -1,0 +1,158 @@
+$dark_theme_background: #4b4d4e;
+$dark_light_font: rgb(244, 246, 245);
+$dark_dark_font: #dbdfdf;
+$dark_teal_border: rgb(17, 184, 184);
+$dark_unsafe_number_color: rgb(197, 160, 39);
+$dark_safe_number_color: rgb(0, 209, 122);
+$cursiveNameColor: rgb(211, 165, 13);
+//light vakues
+
+$light_theme_background: '#F4F6F5';
+$light_light_font: rgb(252, 185, 0);
+$light_dark_font: #301504;
+$light_teal_border: goldenRod;
+$light_unsafe_number_color: rgb(107, 52, 52);
+$light_safe_number_color: rgb(22, 116, 77);
+
+$grey: #282c34;
+$font1: 'Bellota Text';
+$font2: 'Dr Sugiyama';
+$font3: 'Mr Dafoe';
+$font4: 'Telium Web';
+$font5: 'Cormorant Garamond', cursive;
+$font6: 'Dosis';
+$font7: 'Indie Flower';
+$font8: 'Josefin Slab';
+$font9: 'Cinzel';
+
+$color: #61dafb;
+$colorShade1: #4ea9c2;
+$colorShade2: #286f83;
+$background: #282c34;
+$inputBG: rgb(60, 157, 202, 0.6);
+$inputUnFocus: rgb(60, 157, 202);
+
+.create-account-module-dark {
+	height: 100vh;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	background-color: $dark_theme_background;
+}
+
+.outer-text-dark {
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	background-color: $dark_theme_background;
+}
+
+.sign-title-dark {
+	color: $dark_dark_font;
+	font-family: $font1;
+	font-size: 28px;
+	font-weight: 500;
+	padding: 20px;
+	top: 10px;
+	left: 0;
+	right: 0;
+}
+
+.password-rq-dark {
+	font-size: 10px;
+	padding-bottom: 20px;
+}
+.inner-account-parent-dark {
+	display: flex;
+	height: 90vh;
+	flex-direction: column;
+	padding: 5px;
+	justify-content: center;
+	align-content: center;
+	align-self: center;
+	min-width: 300px;
+	min-height: 400px;
+	//	overflow: hidden;
+}
+
+.pw-help-message-dark {
+	justify-self: center;
+	align-self: left;
+	color: rgb(255, 189, 47);
+	font-size: 17px;
+
+	padding-left: 10px;
+}
+
+.error-message-dark {
+	justify-self: center;
+	align-self: bottom;
+	color: rgb(8, 253, 253);
+
+	font-size: 18px;
+}
+
+//light
+.create-account-module-light {
+	height: 100vh;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	color: '#F4F6F5';
+}
+
+.outer-text-light {
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	color: $light_dark_font;
+}
+
+.sign-title-light {
+	font-family: $font1;
+	font-size: 28px;
+	font-weight: 500;
+	padding: 20px;
+	top: 10px;
+	left: 0;
+	right: 0;
+	color: $light_dark_font;
+}
+
+.password-rq-light {
+	font-size: 10px;
+	padding-bottom: 20px;
+	color: $light_dark_font;
+}
+.inner-account-parent-light {
+	display: flex;
+	height: 90vh;
+	flex-direction: column;
+	padding: 5px;
+	justify-content: center;
+	align-content: center;
+	align-self: center;
+	min-width: 300px;
+	min-height: 400px;
+	color: $light_dark_font;
+
+	//	overflow: hidden;
+}
+
+.pw-help-message-light {
+	justify-self: center;
+	align-self: left;
+	color: rgb(255, 189, 47);
+	font-size: 17px;
+	color: $light_dark_font;
+
+	padding-left: 10px;
+}
+
+.error-message-light {
+	justify-self: center;
+	align-self: bottom;
+	color: rgb(105, 96, 43);
+
+	font-size: 18px;
+}

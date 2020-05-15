@@ -1,0 +1,29 @@
+.drawer-parent {
+    display: flex;
+    height: 100vh;
+    width: 170px;
+    background: rgba(12, 10, 7, 0.782);
+    top: 0;
+    right: 0;
+    font-family: 'Cinzel';
+    box-shadow: 2px 0px 0.1rem rgb(7, 0, 0);
+    z-index: 5;
+    position: fixed;
+    align-content: center;
+    justify-content: center;
+    padding-top: 110px;
+  }
+  
+  
+  .drawer-ul {
+    padding: 10px;
+    font-family: 'Cinzel';
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 60px;
+    &:last-child{
+      margin-bottom: 30px;
+    }
+  }
+ 

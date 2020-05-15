@@ -1,0 +1,112 @@
+$blue: #61dafb;
+$theme: #4b4d4e;
+$counterTextColor: rgb(204, 204, 204);
+//$theme: grey;
+$grey: #282c34;
+$font1: 'Bellota Text';
+$font2: 'Dr Sugiyama';
+$font3: 'Mr Dafoe';
+$font5: 'Cormorant Garamond', cursive;
+$font6: 'Dosis';
+$font7: 'Indie Flower';
+$font8: 'Josefin Slab';
+$font9: 'Cinzel';
+$fontA: 'Telium Web';
+$unSafe: rgb(252, 185, 0);
+$safe: rgb(0, 209, 122);
+$dark_theme_background: #4b4d4e;
+
+$dark_gradient: linear-gradient(90deg, rgb(40, 44, 52)15%, rgb(0, 0, 0) 100%);
+$light_gradient: linear-gradient(70deg, rgb(252, 185, 0) 35%, #301504 100%);
+$light_theme_background: '#F4F6F5';
+
+//darkmode
+.navbar-dark {
+	height: 10vh;
+	width: 100%;
+	position: sticky;
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: grid;
+	background: $dark_theme_background;
+	grid-template-columns: 1fr 9fr;
+	grid-template-areas: 'icon icon . . button button button button button';
+}
+
+.nav-image-container-dark {
+	grid-area: icon;
+	height: 10vh;
+	padding: 5px;
+}
+
+.nav-image-block-dark {
+	grid-area: icon;
+	height: 60px;
+	width: 60px;
+}
+
+.nav-user-image-dark {
+	grid-area: icon;
+	height: 40px;
+	width: 40px;
+	object-fit: cover;
+	padding: 0px;
+	//margin-top: 10px;
+	border-radius: 50%;
+	background-color: transparent;
+}
+
+.nav-icon-bar-dark,
+.nav-icon-bar-light {
+	grid-area: button;
+	display: flex;
+
+	height: 10vh;
+	background-color: transparent;
+	padding-top: 3.5vh;
+	padding: 15px;
+	> Button {
+		margin-right: 5px;
+	}
+}
+
+//light
+.navbar-light {
+	height: 10vh;
+	width: 100%;
+	position: sticky;
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: grid;
+
+	background: $light_theme_background;
+	grid-template-columns: 1fr 9fr;
+	grid-template-areas: 'icon icon . . button button button button button';
+}
+
+.nav-image-container-light {
+	grid-area: icon;
+	height: 10vh;
+	padding: 5px;
+}
+
+.nav-image-block-light {
+	grid-area: icon;
+	height: 60px;
+	width: 60px;
+}
+
+.nav-user-image-light {
+	grid-area: icon;
+	height: 40px;
+	width: 40px;
+	object-fit: cover;
+	padding: 0px;
+	//margin-top: 10px;
+	border-radius: 50%;
+	background-color: transparent;
+}

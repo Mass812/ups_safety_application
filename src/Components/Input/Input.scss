@@ -1,0 +1,126 @@
+$dark_theme_background: #4b4d4e;
+$dark_light_font: rgb(244, 246, 245);
+$dark_dark_font: #dbdfdf;
+$dark_teal_border: rgb(17, 184, 184);
+$dark_unsafe_number_color: rgb(197, 160, 39);
+$dark_safe_number_color: rgb(0, 209, 122);
+
+//light vakues
+
+$light_theme_background: '#F4F6F5';
+$light_light_font: rgb(252, 185, 0);
+$light_dark_font: #301504;
+$light_teal_border: goldenRod;
+$light_unsafe_number_color: rgb(107, 52, 52);
+$light_safe_number_color: rgb(22, 116, 77);
+
+$grey: #282c34;
+$font1: 'Bellota Text';
+$font2: 'Dr Sugiyama';
+$font3: 'Mr Dafoe';
+$font4: 'Telium Web';
+$font5: 'Cormorant Garamond', cursive;
+$font6: 'Dosis';
+$font7: 'Indie Flower';
+$font8: 'Josefin Slab';
+$font9: 'Cinzel';
+
+$color: #61dafb;
+$colorShade1: #4ea9c2;
+$colorShade2: #286f83;
+$background: #282c34;
+$inputBG: rgb(60, 157, 202, 0.6);
+$inputUnFocus: rgb(60, 157, 202);
+
+.input-dark {
+	color: $light_dark_font;
+	&::placeholder {
+		color: $light_dark_font;
+		font-family: $font5;
+		font-weight: 300;
+		padding-left: 5px;
+	}
+}
+.input-light {
+	color: $light_light_font;
+	&::placeholder {
+		color: $light_dark_font;
+		font-family: $font5;
+		font-weight: 300;
+		padding-left: 5px;
+	}
+}
+
+//darkmode
+.post-block-dark {
+	width: 100%;
+	background-color: $dark_theme_background;
+}
+.show-typed-dark {
+	background-color: $dark_theme_background;
+	min-height: 20px;
+	// word-break: break-all;
+	color: $light_light_font;
+	font-family: "Comfortaa", cursive;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px 0px;
+	height: 20px;
+}
+
+.form-block-dark {
+	padding: 15px 0px;
+	background-color: $dark_theme_background;
+}
+
+.input-question-dark {
+	color: '#F4F6F5';
+	font-family: $font6;
+	font-size: 12px;
+	padding: 15px 30px 0px 30px;
+	background-color: $dark_theme_background;
+}
+
+.post-success-dark {
+	color: rgb(24, 179, 10);
+	font-size: 12px;
+	font-family: 'Comfortaa';
+	padding-right: 100px;
+	font-weight: 700;
+	background-color: $dark_theme_background;
+}
+
+//lightmode
+.post-block-light {
+	width: 100%;
+	background-color: $light_theme_background;
+}
+.show-typed-light {
+	min-height: 20px;
+	// word-break: break-all;
+	color: $light_light_font;
+	font-family: "Comfortaa", cursive;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px 0px;
+	height: 20px;
+}
+
+.form-block-light {
+	padding: 15px 0px;
+}
+
+.input-question-light {
+	color: '#F4F6F5';
+	font-family: $font6;
+	font-size: 12px;
+	padding: 15px 30px 0px 30px;
+}
+
+.post-success-light {
+	color: rgb(24, 179, 10);
+	font-size: 12px;
+	font-family: 'Comfortaa';
+	padding-right: 100px;
+	font-weight: 700;
+}

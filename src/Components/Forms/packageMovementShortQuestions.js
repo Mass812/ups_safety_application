@@ -1,0 +1,1 @@
+export default [ { id: 'ONE', question: 'Bends at Knees' }, { id: 'TWO', question: 'Power Zone ' }, { id: 'THREE', question: 'Initial Test Weight' }, { id: 'FOUR', question: 'Hands to Surface' }, { id: 'FIVE', question: 'Faces Flow' }, { id: 'SIX', question: 'Uses Load Stand' } ]
