@@ -16,6 +16,8 @@ Per request I am presenting only the earliest version of this app, to display th
 The full site generates emails with document information, creates new rows to spreadsheets, and tracks supervisors safety efficiency over time. Every data value is stored in redux and handled through action generators. The colleted data points show trends and recommend safety outreach and focuses for UPS CHSP and CERT teams.
 
 
-The site can be reached @
+The site can be reached @ https://upssafety-f8d4d.firebaseapp.com/
+
+
 
 
