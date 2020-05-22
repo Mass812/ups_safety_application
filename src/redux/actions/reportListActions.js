@@ -13,7 +13,6 @@ export const getThisWeeksTugReports = () => {
 			.collection('tug_audit')
 			.orderBy('createdAt', 'desc')
 			.limit(15)
-			.where('month', '==', todaysMonth)
 			.get()
 			.then((snap) => {
 				console.log(snap)

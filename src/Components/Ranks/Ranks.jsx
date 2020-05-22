@@ -2,14 +2,17 @@ import React, { Fragment, useEffect, useState } from 'react'
 import Footer from '../Footer/Footer'
 import NavBar from '../Navbar/Navbar'
 import { useSelector, useDispatch } from 'react-redux'
+import { useHistory } from 'react-router-dom'
 import { getSVDocs } from '../../redux/actions/adminActions'
 import './Ranks.scss'
 import Button from '../Button/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSync, faToggleOff, faToggleOn } from '@fortawesome/free-solid-svg-icons'
+import { faSync, faToggleOff, faToggleOn, faChartArea } from '@fortawesome/free-solid-svg-icons'
+import SVStats from '../SVStats/SVStats'
 
 const Ranks = () => {
 	const dispatch = useDispatch()
+	const history = useHistory()
 	const [ svListHasData, setSVListHasData ] = useState(true)
 	const darkMode = useSelector((state) => state.darkMode.darkMode)
 	const currentSVs = useSelector((state) => state.admin.svsDocs)
@@ -20,6 +23,7 @@ const Ranks = () => {
 	const [ active, setActive ] = useState(false)
 	const [ allWs, setAllWs ] = useState()
 	const [ allDs, setAllDs ] = useState()
+	const [ SeSelected, setSeSelected ] = useState(false)
 
 	useEffect(() => {}, [ currentSVs, desiredShift, svListHasData ])
 
@@ -134,8 +138,8 @@ const Ranks = () => {
 			})
 	}
 
-	const displayDs = allDs ? allDs.map((n, idx) => <div>{n}</div>) : null
-	const displayWs = allWs ? allWs.map((n, idx) => <div>{n}</div>) : null
+	const displayDs = allDs ? allDs.map((n, idx) => <div key={idx}>{n}</div>) : null
+	const displayWs = allWs ? allWs.map((n, idx) => <div key={idx}>{n}</div>) : null
 
 	const addSum = (array) => {
 		let initialValue = 0
@@ -151,6 +155,10 @@ const Ranks = () => {
 		return all / number
 	}
 
+	const expandSEGraph = () => {
+		setSeSelected((SeSelected) => !SeSelected)
+	}
+
 	let displaySVCards = desiredShift.map((n, idx) => (
 		<div className={darkMode ? 'sv-card-dark' : 'sv-card-light'} key={idx}>
 			<div className={darkMode ? 'top-of-card-dark' : 'top-of-card-light'}>
@@ -162,6 +170,7 @@ const Ranks = () => {
 
 			<div className={darkMode ? 'card-left-right-divider-dark' : 'card-left-right-divider-light'}>
 				<div className={darkMode ? 'left-side-of-card-dark' : 'left-side-of-card-light'}>
+					{SeSelected ? n.efficiency.length === 0 ? <div style={{ color: 'goldenrod' }}>No Audit Data.</div> : <SVStats array={n.efficiency} /> : null}
 					<div className={darkMode ? 'left-side-title-dark' : 'left-side-title-light'}>
 						{' '}
 						Employees (<span>
@@ -179,7 +188,7 @@ const Ranks = () => {
 				<div className={darkMode ? 'right-side-of-card-dark' : 'right-side-of-card-light'}>
 					<div className={darkMode ? 'right-side-title-dark' : 'right-side-title-light'}>S.E.R.</div>
 					<div className={darkMode ? 'right-side-stat-dark' : 'right-side-stat-light'}>
-						{addSum(n.efficiency)}
+						{n.efficiency.length === 0 ? 0 : addSum(n.efficiency)}
 						<span style={{ fontSize: '20px' }}>%</span>
 					</div>
 					<div className={darkMode ? 'right-side-title-dark' : 'right-side-title-light'}> </div>
@@ -191,6 +200,7 @@ const Ranks = () => {
 	return (
 		<Fragment>
 			<NavBar />
+
 			<div className={darkMode ? 'ranking-parent-dark' : 'ranking-parent-light'}>
 				<div style={{ padding: '20px' }} className={darkMode ? 'ranking-page-refresh-dark' : 'ranking-page-refresh-light'}>
 					{' '}
@@ -200,6 +210,11 @@ const Ranks = () => {
 				</div>
 				<div style={{ border: '2px inset silver' }} className={darkMode ? 'filter-box-dark' : 'filter-box-light'}>
 					<div className={darkMode ? 'ranking-page-title-dark' : 'ranking-page-title-light'}>Select An Option</div>
+					<div>
+						<Button onClick={expandSEGraph}>
+							<FontAwesomeIcon icon={faChartArea} /> Display Safety Efficiencies Over Time
+						</Button>
+					</div>
 					<div style={{ display: 'flex', padding: '20px 0px 5px 0px' }}>
 						<button
 							style={{ borderColor: '#f5f5f5', width: '24%' }}
@@ -233,6 +248,7 @@ const Ranks = () => {
 							<span style={{ fontSize: '15px' }}>Walker/DeIce</span>
 						</button>
 					</div>
+
 					{active ? (
 						<div className='all-w-d'>
 							<div>

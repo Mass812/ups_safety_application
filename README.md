@@ -17,7 +17,7 @@ The application utilizes React, Redux, Redux-Persist, Firebase Auth and Firestor
 
 
 
-The full site:
+The full site: 
 1]  generates emails of the audit document,
 2] creates new rows to spreadsheets,
 3] and tracks supervisors safety efficiency over time. 
