@@ -25,7 +25,10 @@ $font7: 'Indie Flower';
 $font8: 'Josefin Slab';
 $font9: 'Cinzel';
 
-*{box-sizing: border-box; max-width:  100vw}
+* {
+	box-sizing: border-box;
+	max-width: 100vw;
+}
 
 .report-link-container-dark {
 	background-color: $dark_theme_background;
@@ -37,12 +40,9 @@ $font9: 'Cinzel';
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-
-
 }
 
 report-parent-dark {
-	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -51,10 +51,10 @@ report-parent-dark {
 	background-color: $dark_theme_background;
 }
 
-.report-card-parent{
+.report-card-parent {
 	max-width: 900px;
 	font-size: 14px;
-	
+
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
@@ -160,16 +160,11 @@ report-parent-dark {
 }
 
 .safe-unsafe-ratio-link-dark {
-	padding-top: 3px;
-	position: sticky;
+	padding-top: 30px;
 	color: rgb(143, 140, 125);
-	position: absolute;
 	object-fit: contain;
-	margin-top: 50px;
 	left: 15px;
 	font-family: $font1;
-	overflow: hidden;
-	width: 50%;
 }
 
 //LIGHT MODE
@@ -180,7 +175,6 @@ report-parent-dark {
 	object-fit: contain;
 	left: 15px;
 	font-family: $font1;
-	
 }
 .report-link-container-light {
 	background-color: $dark_light_font;
@@ -192,8 +186,6 @@ report-parent-dark {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-
-
 }
 
 report-parent-light {
@@ -301,7 +293,6 @@ report-parent-light {
 	max-width: 900px;
 	padding: 10px;
 	box-shadow: 2px 2px 6px grey, -2px -2px 4px grey;
-
 }
 
 .hard-data-point-dark-top {
